@@ -6,12 +6,8 @@ RUN apt-get update && \
 
 RUN apt-get install wget git -y
 
-RUN git clone https://github.com/Eric-mingjie/rethinking-network-pruning.git
-
 RUN apt-get install build-essential
 
 RUN pip3 install --upgrade pip
 
-RUN pip3 install numpy matplotlib torch==0.3.1 pillow==6.1 progress
-
-RUN pip3 install torchvision==0.2.0
+RUN pip3 install pywick numpy matplotlib torch torchvision pillow progress
