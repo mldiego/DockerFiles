@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -ex
+
+git clone --recursive https://github.com/verivital/nnv.git

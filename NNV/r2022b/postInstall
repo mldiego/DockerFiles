@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+set -ex
+
+# Somehow this is not necessary in CodeOcean
+git clone https://github.com/verivital/nnv.git
+
+mv /nnv/* / # move directories to / in docker cntainer, same as in codeocean
+
+# this directory is used as a flag to detect if on codeocean or not
+mkdir -p /codeocean-true
+
+mkdir -p /deps
+
+cd /deps
+
+git clone https://github.com/verivital/CORA.git
+
+git clone https://github.com/verivital/onnx2nnv.git
+
+cd /
+
+wget -q https://www.dropbox.com/s/tkp1nvesr5ox7l9/sppFile.zip
+
+ls
+
+unzip sppFile.zip -d /code/nnv/engine
+
+# This should work in codeocean, but here it does not because we need a license, which we provide when running it only
+matlab -nodisplay -r "cd /code/nnv/; run install.m; addpath(genpath('deps')); addpath(genpath('/code')); savepath"

@@ -1,0 +1,3 @@
+docker build . -t nnvcodeocean
+docker run --mac-address=9c:b6:d0:c3:a1:59 --volume "$PWD/license":/MATLAB/licenses --name fts_docker nnvcodeocean /bin/bash -c "matlab -nodisplay -r "run_cav23_short" "
+docker cp fts_docker:/results/logs/ results/
