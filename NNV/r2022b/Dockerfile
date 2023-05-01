@@ -10,6 +10,4 @@ RUN /postInstall
 # USER matlab
 WORKDIR /
 
-COPY run_cav23_short.m /
-COPY run_cav23_re.m /
 COPY license.lic /MATLAB/licenses
