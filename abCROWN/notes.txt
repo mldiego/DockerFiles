@@ -1,0 +1,4 @@
+This image takes a lot of space (>20GB)
+It could be reduced by deleting all models provided
+I tested on the example provided on the instructions and it seems to run 
+ - could not fully tested due to limited memory in personal computer
