@@ -1,0 +1,12 @@
+They provide a dockerfile:
+https://github.com/intelligent-control-lab/ModelVerification.jl/blob/main/Dockerfile
+
+As well as a docker image:
+docker pull huhanjiang666/modelverification-benchmark:latest
+
+(Tested the second option, takes a long time to run without GPU, even the single ACAS Xu example they provide)
+
+This is the result:
+result = (value = "holds", time = 58.021130505, bytes = 13060401356, gctime = 3.264287437, gcstats = Base.GC_Diff(13060401356, 134305, 76, 132053439, 621612, 129242, 3264287437, 149, 0))
+
+But it took much longer. Probably to install (activate) environment

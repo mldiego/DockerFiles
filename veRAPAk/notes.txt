@@ -1,0 +1,5 @@
+Information to run veRAPAk as a docker image can be found here:
+https://github.com/formal-verification-research/VERAPAK/tree/main
+
+Simplest way worul be to directly download the image they provide:
+docker pull yodarocks1/verapak:latest
